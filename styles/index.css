@@ -7,6 +7,9 @@ html {
   @apply text-gray-900;
 }
 
+.w-10 {width: 25rem;}
+.h-10 {height: 14rem;}
+
 @media screen and (min-width: 640px) {
   html {
     font-size: 14px;

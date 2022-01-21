@@ -37,7 +37,6 @@ const Footer = ({ footer }) => {
       </div> */}
       <div className="text-sm bg-gray-200 py-6 text-gray-700">
         <div className="container">{footer.smallText} </div>
-			{{ +91 80 4510 4510 }}
       </div>
     </footer>
   )
