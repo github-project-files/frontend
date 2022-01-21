@@ -20,12 +20,12 @@ const Navbar = ({ navbar, pageContext }) => {
     <>
       {/* The actual navbar */}
       <nav className="border-gray-200 border-b-2 py-6 sm:py-2">
-        <div className="container flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-between px-8">
           {/* Content aligned to the left */}
           <div className="flex flex-row items-center">
             <Link href="/">
-              <a className="h-8 w-32">
-                <NextImage width="120" height="33" media={navbar.logo} />
+              <a className="h-15">
+                <NextImage width="83" height="70" media={navbar.logo} />
               </a>
             </Link>
             {/* List of links on desktop */}
