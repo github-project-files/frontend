@@ -67,7 +67,7 @@ const LeadForm = ({ data }) => {
                   className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
                   type="textarea"
                   name="message"
-                  rows='5'
+                  rows="5"
                   placeholder={data.message}
                 />
                 <Button
