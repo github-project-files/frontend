@@ -223,7 +223,10 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                   ... on ComponentSectionsLeadForm {
                     id
-                    emailPlaceholder
+                    name
+                    subject
+                    email
+                    message
                     location
                     submitButton {
                       id

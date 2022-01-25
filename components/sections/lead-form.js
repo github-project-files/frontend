@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { fetchAPI } from "utils/api"
 import * as yup from "yup"
-import { Formik, Form, Field } from "formik"
+import { Formik, Form, Field, textarea } from "formik"
 import Button from "../elements/button"
 
 const LeadForm = ({ data }) => {
@@ -44,18 +44,38 @@ const LeadForm = ({ data }) => {
         >
           {({ errors, touched, isSubmitting }) => (
             <div>
-              <Form className="flex flex-col md:flex-row gap-4">
+              <Form className="flex flex-col md:flex-row gap-4 leadform">
+                <Field
+                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder={data.name}
+                />
+                <Field
+                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
+                  type="text"
+                  name="subject"
+                  placeholder={data.subject}
+                />
                 <Field
                   className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
                   type="email"
                   name="email"
-                  placeholder={data.emailPlaceholder}
+                  placeholder={data.email}
+                />
+                 <textarea
+                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
+                  type="textarea"
+                  name="message"
+                  rows='5'
+                  placeholder={data.message}
                 />
                 <Button
                   type="submit"
                   button={data.submitButton}
                   disabled={isSubmitting}
                   loading={loading}
+                  color="blue"
                 />
               </Form>
               <p className="text-red-500 h-12 text-sm mt-1 ml-2 text-left">
