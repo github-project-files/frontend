@@ -50,18 +50,18 @@ const LeadForm = ({ data }) => {
                   type="text"
                   name="name"
                   placeholder={data.name}
+                />                
+                <Field
+                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
+                  type="email"
+                  name="email"
+                  placeholder={data.email}
                 />
                 <Field
                   className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
                   type="text"
                   name="subject"
                   placeholder={data.subject}
-                />
-                <Field
-                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
-                  type="email"
-                  name="email"
-                  placeholder={data.email}
                 />
                  <textarea
                   className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
