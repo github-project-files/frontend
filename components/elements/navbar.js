@@ -36,6 +36,9 @@ const Navbar = ({ navbar, pageContext }) => {
                     <div className="hover:text-gray-900 px-2 py-1">
                       {navLink.text}
                     </div>
+                      <div className="hover:text-gray-900 px-2 py-1">
+                      <a href="yahoo.com" >read more</a>
+                    </div>
                   </CustomLink>
                 </li>
               ))}
